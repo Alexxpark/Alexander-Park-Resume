@@ -6,6 +6,68 @@
 		<title>Your Name resume</title>
 	</head>
 
+    <script>
+        function toggleAbout() {
+            var aboutSection = document.getElementById("about");
+            if (aboutSection.style.display === "none") {
+                aboutSection.style.display = "block";
+            } else {
+                aboutSection.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        /* customized button styles */
+        .about-button {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #008080;
+  transform: scale(1.1);
+}
+
+        /* hide the about section by default */
+        #about {
+				display: none;
+				background-color: #f7f7f7;
+				padding: 20px;
+				margin-top: 20px;
+				border-radius: 4px;
+				box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+				font-size: 16px;
+				line-height: 1.5;
+			}
+
+			.about-button:hover {
+				background-color: #008080;
+			}
+
+			/* hide the about section by default */
+			#about {
+				display: none;
+				animation: fadeIn 1s ease;
+			}
+
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+    
+        
+        
+    </style>
 	<body>
 		<header id="header">
 			<!-- resume header with your name and title -->
@@ -19,23 +81,26 @@
 				<section>
 					<h2>CONTACT</h2>
 					<!-- contact info including social media -->
-                    <p>
+                    
+					<p class="section-content" id="contact">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:your-email@example.com">your-email@example.com</a>
+                        <a href="mailto:alexxpark@gmail.com">alexxpark@gmail.com</a>
                     </p>
-                    <p>
+                    <p class="section-content" id="contact">
                         <i class="fab fa-github" aria-hidden="true"></i>
-                        <a href="github.com/gh-username">gh-username</a>
+                        <a href="https://github.com/Alexxpark">Alexxpark</a>
                     </p>
-                    <p>
+                    <p class="section-content" id="contact">
                         <i class="fab fa-linkedin" aria-hidden="true"></i>
                         <a href="linkedin.com/linkedin-username">linkedin-username</a>
                     </p>
+
+
 				</section>
 				<section>
 					<h2>SKILLS</h2>
 					<!-- your skills -->
-                    <p>HTML, CSS, GitHub, VS Code...</p>
+                    <p>Github/Python/R</p>
 
 				</section>
 				<section>
@@ -54,7 +119,10 @@
 				<section>
 					<h2>ABOUT</h2>
 					<!-- about you -->
-                    <p>A brief paragraph about you and what kind of job/company you are looking to work for.</p>
+                    <button class="about-button" onclick="toggleAbout()">About Me</button>
+					<p id="about"> Why hello there, my name is Alexander Park Korean-American born in Mississippi.</p>
+
+
 
 				</section>
 				<section>
@@ -77,3 +145,6 @@
 		</main>
 	</body>
 </html>
+
+
+
