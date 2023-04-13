@@ -1,10 +1,14 @@
+<!DOCTYPE html>
 <html>
 	<head> 
 		<link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
 
 		<title>Your Name resume</title>
+        
 	</head>
+    
 
     <script>
         function toggleAbout() {
@@ -14,9 +18,14 @@
             } else {
                 aboutSection.style.display = "none";
             }
-        }
+}
+
     </script>
     <style>
+        
+     
+        
+        
         /* customized button styles */
         .about-button {
   background-color: teal;
@@ -33,6 +42,26 @@
   background-color: #008080;
   transform: scale(1.1);
 }
+/* customized button styles */
+/* customized button styles */
+.about-button {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #008080;
+  transform: scale(1.1);
+}
+
+
+
 
         /* hide the about section by default */
         #about {
@@ -64,11 +93,17 @@
 					opacity: 1;
 				}
 			}
+            
+
+    
+
+    
     
         
         
     </style>
 	<body>
+        
 		<header id="header">
 			<!-- resume header with your name and title -->
 			<h1>Alexander Park</h1>
@@ -79,22 +114,25 @@
 		<main>
 			<article id="mainLeft">
 				<section>
-					<h2>CONTACT</h2>
+					<h2></h2>
+                    </p>
 					<!-- contact info including social media -->
-                    
-					<p class="section-content" id="contact">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:alexxpark@gmail.com">alexxpark@gmail.com</a>
-                    </p>
-                    <p class="section-content" id="contact">
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                        <a href="https://github.com/Alexxpark">Alexxpark</a>
-                    </p>
-                    <p class="section-content" id="contact">
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <a href="linkedin.com/linkedin-username">linkedin-username</a>
-                    </p>
-
+                    <!-- contact button -->
+  <button class="about-button" id="contact-button">Contact</button>
+  <!-- contact info including social media -->
+  <div class="section-content" id="contact">
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <a href="mailto:alexxpark@gmail.com">alexxpark@gmail.com</a>
+  </div>
+  <div class="section-content" id="contact">
+    <i class="fab fa-github" aria-hidden="true"></i>
+    <a href="https://github.com/Alexxpark">Alexxpark</a>
+  </div>
+  <div class="section-content" id="contact">
+    <i class="fab fa-linkedin" aria-hidden="true"></i>
+    <a href="linkedin.com/linkedin-username">linkedin-username</a>
+  </div>
+    </p>
 
 				</section>
 				<section>
@@ -117,10 +155,10 @@
 			</article>
 			<article id="mainRight">
 				<section>
-					<h2>ABOUT</h2>
+					<h2></h2>
 					<!-- about you -->
                     <button class="about-button" onclick="toggleAbout()">About Me</button>
-					<p id="about"> Why hello there, my name is Alexander Park Korean-American born in Mississippi.</p>
+					<p id="about"> Why hello there, my name is Alexander Park Korean-American born in Mississippi. </p>
 
 
 
@@ -145,6 +183,3 @@
 		</main>
 	</body>
 </html>
-
-
-
